@@ -1,8 +1,8 @@
 steps:
-# giving executable permissions
-- name: gcr.io/cloud-builders/gcloud
-entrypoint: "bash"
-args: ["-c", 'find . -name "*.sh"', "-exec", "chmod +rx", "{}", '\;']
-- name: gcr.io/cloud-builders/gcloud
-entrypoint: "bash"
-args: ["staorage.sh"]
+  # giving executable permissions
+  - name: gcr.io/cloud-builders/gcloud
+    entrypoint: "bash"
+    args: ["-c", 'find . -name "*.sh"', "-exec", "chmod +rx", "{}", '\;']
+  - name: gcr.io/cloud-builders/gcloud
+    entrypoint: "bash"
+    args: ["staorage.sh"]
